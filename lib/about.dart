@@ -7,7 +7,12 @@ class AboutScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("About Dry Sense"),
+        title: const Text(
+            "ABOUT DRY SENSE",
+            style: TextStyle(letterSpacing: 2, fontSize: 20, fontWeight: FontWeight.bold)
+        ),
+        centerTitle: true,
+        backgroundColor: Colors.yellow[700],
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),

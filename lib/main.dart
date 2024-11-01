@@ -135,7 +135,7 @@ class _ProvisioningScreenState extends State<ProvisioningScreen> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          const SizedBox(height: 50),
+          const SizedBox(height: 30),
           if (moistureStatus != "Waiting...")
             Text(
               'Your cloth is now',
@@ -146,15 +146,21 @@ class _ProvisioningScreenState extends State<ProvisioningScreen> {
             statusMessage,
             style: const TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
           ),
-          const SizedBox(height: 40),
+          const SizedBox(height: 30),
           Icon(
             statusIcon,
             size: 60,
             color: statusColor,
           ),
           const SizedBox(height: 30),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 22.0, vertical: 10.0), // Adjust as needed
+          Container(
+            padding: const EdgeInsets.all(16.0), // Space inside the rectangle
+            margin: const EdgeInsets.symmetric(horizontal: 22.0, vertical: 10.0),
+            decoration: BoxDecoration(
+              color: Colors.yellow[100], // Background color of the rectangle
+              border: Border.all(color: Colors.yellow[700]!, width: 2), // Border color and width
+              borderRadius: BorderRadius.circular(12), // Rounded corners
+            ),
             child: Text(
               subMessage,
               textAlign: TextAlign.center,
@@ -164,11 +170,11 @@ class _ProvisioningScreenState extends State<ProvisioningScreen> {
               ),
             ),
           ),
-          const SizedBox(height: 30), // Added spacing before the GIF
+          const SizedBox(height: 30),
             Image.asset(
               gifUrl,
-              height: 180, // Adjust height as needed
-              width: 180,  // Adjust width as needed
+              height: 180,
+              width: 180,
               fit: BoxFit.cover,
             ),
           const Spacer(),
