@@ -2,15 +2,47 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'dart:async';
+import 'weather_display_screen.dart';
 import 'weather.dart'; // Import the WeatherScreen
 import 'about.dart';   // Import the AboutScreen
+import 'package:permission_handler/permission_handler.dart';
+
+Future<void> requestLocationPermission() async {
+  // Check the current status of the location permission
+  var status = await Permission.location.status;
+
+  // If not granted, request the permission
+  if (!status.isGranted) {
+    await Permission.location.request();
+  }
+}
+
+
+
 
 void main() {
   runApp(const MyApp());
 }
 
-class MyApp extends StatelessWidget {
+
+class MyApp extends StatefulWidget {
   const MyApp({super.key});
+
+  /////////////////////////////////////////
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  @override
+  void initState() {
+    super.initState();
+    requestLocationPermission();
+  }
+
+
+
+  ////////////////////////////////////////
 
   @override
   Widget build(BuildContext context) {
@@ -28,6 +60,8 @@ class MyApp extends StatelessWidget {
 class ProvisioningScreen extends StatefulWidget {
   const ProvisioningScreen({super.key, required this.title});
   final String title;
+
+
 
   @override
   State<ProvisioningScreen> createState() => _ProvisioningScreenState();
@@ -106,12 +140,12 @@ class _ProvisioningScreenState extends State<ProvisioningScreen> {
           children: <Widget>[
             Text(
               'Moisture Status:',
-              style: Theme.of(context).textTheme.headline6,
+              style: Theme.of(context).textTheme.titleLarge,
             ),
             const SizedBox(height: 20),
             Text(
               moistureStatus,
-              style: Theme.of(context).textTheme.headline4?.copyWith(
+              style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                 color: moistureStatus == "Wet" ? Colors.green : Colors.red,
               ),
             ),
@@ -120,7 +154,8 @@ class _ProvisioningScreenState extends State<ProvisioningScreen> {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => const WeatherScreen()),
+                  MaterialPageRoute(builder: (context) => const WeatherDisplayScreen(),
+                  ),
                 );
               },
               child: const Text("Check Weather Today"),

@@ -1,70 +1,78 @@
-// weather.dart
-import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
 import 'dart:convert';
+import 'package:http/http.dart' as http;
+import 'package:geolocator/geolocator.dart';
 
-class WeatherScreen extends StatefulWidget {
-  const WeatherScreen({Key? key}) : super(key: key);
+class WeatherScreen {
+  static const String apiKey = 'c3dcc587e7a6e00d06a71bf1fbc86f4a';
 
-  @override
-  _WeatherScreenState createState() => _WeatherScreenState();
-}
+  // Function to get current location and fetch weather data based on it
+  static Future<List<String>> fetchRainPrediction() async {
+    Position position = await _determinePosition();
+    final latitude = position.latitude;
+    final longitude = position.longitude;
 
-class _WeatherScreenState extends State<WeatherScreen> {
-  String weatherInfo = "Fetching weather...";
+    final url = Uri.parse(
+        'https://api.openweathermap.org/data/2.5/forecast?lat=$latitude&lon=$longitude&appid=$apiKey&units=metric');
 
-  // Replace with your API key and city
-  final String weatherApiKey = "your_api_key_here"; // Replace with actual API key
-  final String city = "YourCity"; // Replace with your city name
-
-  Future<void> fetchWeather() async {
-    try {
-      final response = await http.get(
-        Uri.parse("https://api.openweathermap.org/data/2.5/weather?q=$city&appid=$weatherApiKey&units=metric"),
-      );
-
-      if (response.statusCode == 200) {
-        final data = jsonDecode(response.body);
-        final temperature = data["main"]["temp"];
-        final description = data["weather"][0]["description"];
-
-        setState(() {
-          weatherInfo = "Temperature: $temperature°C\nCondition: $description";
-        });
-      } else {
-        setState(() {
-          weatherInfo = "Error fetching weather (status code: ${response.statusCode})";
-        });
-      }
-    } catch (e) {
-      setState(() {
-        weatherInfo = "Error connecting to weather service.";
-      });
+    final response = await http.get(url);
+    if (response.statusCode == 200) {
+      final data = json.decode(response.body);
+      return _parseRainData(data);
+    } else {
+      throw Exception('Failed to fetch weather data');
     }
   }
 
-  @override
-  void initState() {
-    super.initState();
-    fetchWeather();
+  // Function to parse rain data for today only, at 30-minute intervals
+  static List<String> _parseRainData(Map<String, dynamic> data) {
+    final list = data['list'];
+    List<String> rainForecast = [];
+
+    DateTime now = DateTime.now();
+    DateTime today = DateTime(now.year, now.month, now.day);
+
+    for (var entry in list) {
+      final dateTime = DateTime.parse(entry['dt_txt']);
+
+      // Check if the forecast is for today and at a 30-minute interval
+      if (dateTime.year == today.year &&
+          dateTime.month == today.month &&
+          dateTime.day == today.day &&
+          dateTime.minute % 30 == 0) {
+
+        final probability = entry['pop']; // Probability of precipitation
+        if (probability != null) {
+          rainForecast.add(
+              'Rain probability at ${dateTime.hour}:${dateTime.minute.toString().padLeft(2, '0')}: ${((probability ?? 0) * 100).toInt()}%');
+        }
+      }
+    }
+
+    return rainForecast.isNotEmpty ? rainForecast : ['No rain expected in the next few hours.'];
   }
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text("Weather Today"),
-      ),
-      body: Center(
-        child: Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: Text(
-            weatherInfo,
-            textAlign: TextAlign.center,
-            style: Theme.of(context).textTheme.headline5,
-          ),
-        ),
-      ),
-    );
+  // Function to get the current position of the device
+  static Future<Position> _determinePosition() async {
+    bool serviceEnabled;
+    LocationPermission permission;
+
+    // Test if location services are enabled
+    serviceEnabled = await Geolocator.isLocationServiceEnabled();
+    if (!serviceEnabled) {
+      throw Exception('Location services are disabled.');
+    }
+
+    permission = await Geolocator.checkPermission();
+    if (permission == LocationPermission.denied) {
+      permission = await Geolocator.requestPermission();
+      if (permission == LocationPermission.denied) {
+        throw Exception('Location permissions are denied');
+      }
+    }
+    if (permission == LocationPermission.deniedForever) {
+      throw Exception('Location permissions are permanently denied');
+    }
+
+    return await Geolocator.getCurrentPosition();
   }
 }

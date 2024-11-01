@@ -18,7 +18,7 @@ class AboutScreen extends StatelessWidget {
             children: [
               Text(
                 'Dry Sense',
-                style: Theme.of(context).textTheme.headline4,
+                style: Theme.of(context).textTheme.titleLarge,
               ),
               const SizedBox(height: 20),
               const Text(
