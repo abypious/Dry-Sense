@@ -164,8 +164,7 @@ class _ProvisioningScreenState extends State<ProvisioningScreen> {
               ),
             ),
           ),
-          const SizedBox(height: 20), // Added spacing before the GIF
-          // if (moistureStatus != "Waiting...") // Display GIF only if not waiting
+          const SizedBox(height: 30), // Added spacing before the GIF
             Image.asset(
               gifUrl,
               height: 180, // Adjust height as needed
