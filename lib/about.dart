@@ -26,7 +26,8 @@ class AboutScreen extends StatelessWidget {
                   style: Theme.of(context).textTheme.titleMedium?.copyWith(
                     fontWeight: FontWeight.bold,
                     fontSize: 22,
-                  ), // Bold title with larger font size
+                  ),
+
                   textAlign: TextAlign.center,
                 ),
                 const SizedBox(height: 20),
@@ -52,10 +53,11 @@ class AboutScreen extends StatelessWidget {
                       'moisture levels in the cloth.',
                   textAlign: TextAlign.justify,
                 ),
-                const SizedBox(height: 40),
+                const SizedBox(height: 20),
                 Column(
                   children: [
-                    Image.asset('assets/NodeMCU.jpg'), // Updated image
+                    Image.asset('assets/NodeMCU.jpg'),
+                    const SizedBox(height: 20),// Updated image
                     const Text(
                       'NodeMCU Microcontroller',
                       style: TextStyle(
@@ -73,6 +75,7 @@ class AboutScreen extends StatelessWidget {
                     ),
                     const SizedBox(height: 20),
                     Image.asset('assets/Moisture_Sensor.jpg'),
+                    const SizedBox(height: 20),
                     const Text(
                       'Moisture Sensor',
                       style: TextStyle(
