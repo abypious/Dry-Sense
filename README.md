@@ -62,9 +62,9 @@ Open the app and connect to the Dry Sense system to view moisture levels and dai
 For Software:
 Here’s the README file for your Git repository:
 
----
-
 # Dry Sense - IoT-Based Cloth Drying Monitoring System
+
+![readme-banner](https://github.com/user-attachments/assets/35332e92-44cb-425b-9dff-27bcf1023c6c)
 
 **Dry Sense** is an IoT-based project aimed at monitoring the drying status of cloth using NodeMCU and a moisture sensor. This system leverages IoT technology to provide real-time data, helping users effectively manage their cloth drying processes.
 
@@ -97,53 +97,74 @@ The **Dry Sense** system operates in both manual and automatic modes:
 
 Users can monitor moisture levels and receive notifications through a mobile application, such as the Blynk app, which provides easy access to essential drying information. This setup optimizes cloth drying and minimizes energy usage.
 
-# Screenshots (Add at least 3)
-![cloth is wet](https://github.com/user-attachments/assets/0573bc13-3e5d-40cc-8935-08bbcc6a5a6a)
-<br>Smart Monitoring: Notification indicating that the cloth is wet.
+## Screenshots
 
-![cloth is dry](https://github.com/user-attachments/assets/7812bd83-72c4-4582-9fab-4e1208f9c45f)
-<br>Smart Monitoring: Notification indicating that the cloth is dry.
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/0573bc13-3e5d-40cc-8935-08bbcc6a5a6a" width="45%" alt="Cloth is Wet Notification" />
+    <img src="https://github.com/user-attachments/assets/7812bd83-72c4-4582-9fab-4e1208f9c45f" width="45%" alt="Cloth is Dry Notification" />
+</div>
 
-![waitng to connect with module](https://github.com/user-attachments/assets/16cdf0cd-1cb8-49dd-a9ee-e8760c591345)
-<br>Connection Status: Awaiting connection with the module, a critical step in initializing communication for data transfer.
+<p align="center">Notification examples for wet (left) and dry (right) cloth status.</p>
 
-![weather forcasting](https://github.com/user-attachments/assets/a2884765-8d87-4349-8817-44d20d406e49)
-<br>Weather Forecasting Dashboard: Real-time data display providing weather predictions to assist in planning and decision-making
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/16cdf0cd-1cb8-49dd-a9ee-e8760c591345" width="45%" alt="Module Connection Waiting" />
+    <img src="https://github.com/user-attachments/assets/a2884765-8d87-4349-8817-44d20d406e49" width="45%" alt="Weather Forecasting Dashboard" />
+</div>
 
-![about page](https://github.com/user-attachments/assets/65ab2fc2-3aa0-476c-8549-80f399679c81)
-<br>About Page: An overview of the mission, vision, and core values of our organization, showcasing our commitment to making a positive impact
+<p align="center">Connection waiting status (left) and the weather forecasting dashboard for real-time data display (right).</p>
 
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/65ab2fc2-3aa0-476c-8549-80f399679c81" width="45%" alt="About Page" />
+</div>
 
-For Hardware:
+<p align="center">The About Page displaying the mission and values of the organization.</p>
 
-# Schematic & Circuit
-![circuit_image](https://github.com/user-attachments/assets/102c1f7f-93bb-4941-9671-fe9e9866dc69)
+## Schematic & Circuit
 
-# Build Photos
-![nodemcu 8266](https://github.com/user-attachments/assets/12924c75-9314-4f7b-9c8e-63b646be799e)
-![16 x 2 I2C LCD Monitor](https://github.com/user-attachments/assets/c934e34f-bdc7-4c05-8d40-158bcbf48f7a)
-![moisture sensor](https://github.com/user-attachments/assets/8d5c3349-3b6a-4b34-888a-cfc0c5473a55)
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/102c1f7f-93bb-4941-9671-fe9e9866dc69" width="60%" alt="Circuit Schematic" />
+</div>
 
-![dev](https://github.com/user-attachments/assets/0857ee88-8e4e-4321-a57c-9857c8d2282a)
-Development images of our Dry Sensor project.
+<p align="center">Circuit schematic for the Dry Sense system, detailing component connections.</p>
 
+## Components
 
-![final2](https://github.com/user-attachments/assets/be5740e7-e8fd-4ee9-bcb1-35c83a8c067e)
-![final](https://github.com/user-attachments/assets/425626a4-307e-450c-b402-c6d3d9b2a633)
-Final images of our project Dry Sensor
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/12924c75-9314-4f7b-9c8e-63b646be799e" width="30%" alt="NodeMCU 8266 Microcontroller" />
+    <img src="https://github.com/user-attachments/assets/c934e34f-bdc7-4c05-8d40-158bcbf48f7a" width="30%" alt="16x2 I2C LCD Display" />
+    <img src="https://github.com/user-attachments/assets/8d5c3349-3b6a-4b34-888a-cfc0c5473a55" width="30%" alt="Moisture Sensor" />
+</div>
 
+<p align="center">Photos of key hardware components: NodeMCU microcontroller, LCD display, and moisture sensor.</p>
 
-### Project Demo
-# Video
-https://drive.google.com/drive/folders/1LhUUJdU6L1q_gl54QoHN0NawcJaNl_-E?usp=sharing
+## Development Images
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/0857ee88-8e4e-4321-a57c-9857c8d2282a" width="45%" alt="Development Image 1" />
+    <img src="https://github.com/user-attachments/assets/be5740e7-e8fd-4ee9-bcb1-35c83a8c067e" width="45%" alt="Development Image 2" />
+</div>
+
+<p align="center">Images of the development phase for the Dry Sense project.</p>
+
+## Final Project Images
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/425626a4-307e-450c-b402-c6d3d9b2a633" width="50%" alt="Final Project Setup" />
+</div>
+
+<p align="center">Completed project setup showing the final version of the Dry Sense system.</p>
+
+## Project Demo
+[Videos](https://drive.google.com/drive/folders/1LhUUJdU6L1q_gl54QoHN0NawcJaNl_-E?usp=sharing)
+
 ## Team Contributions
-- ABY PIOUS VINOY : HARDWARE DEVELOPMENT
-- ATHIRA VIJAYAN : APPLICATION BUILDING
-- SREERAJ K: APPLICATION BUILDING
-
+- **ABY PIOUS VINOY**: Hardware Development
+- **ATHIRA VIJAYAN**: Application Building
+- **SREERAJ K**: Application Building
 
 ---
-Made with ❤️ at TinkerHub Useless Projects 
+
+Made with ❤️ at TinkerHub Useless Projects
 
 ![Static Badge](https://img.shields.io/badge/TinkerHub-24?color=%23000000&link=https%3A%2F%2Fwww.tinkerhub.org%2F)
 ![Static Badge](https://img.shields.io/badge/UselessProject--24-24?link=https%3A%2F%2Fwww.tinkerhub.org%2Fevents%2FQ2Q1TQKX6Q%2FUseless%2520Projects)
