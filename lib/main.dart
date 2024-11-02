@@ -1,5 +1,6 @@
+import 'package:dry_sense/weather_display_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
+import "package:http/http.dart" as http;
 import 'dart:convert';
 import 'weather_display_screen.dart';
 
@@ -40,7 +41,7 @@ class _ProvisioningScreenState extends State<ProvisioningScreen> {
   bool isFetching = false;
   Timer? timer;
 
-  final String esp8266IpAddress = "192.168.54.169"; // Replace with actual IP
+  final String esp8266IpAddress = "192.168.54.169";
 
   Future<void> fetchMoistureStatus() async {
     setState(() {
@@ -90,9 +91,8 @@ class _ProvisioningScreenState extends State<ProvisioningScreen> {
     IconData statusIcon;
     String statusMessage;
     String subMessage;
-    String gifUrl; // Variable to hold the GIF URL
+    String gifUrl;
 
-    // Determine status-related information
     if (moistureStatus == "Dry") {
       statusColor = Colors.yellow[700]!;
       statusIcon = Icons.check_circle_outline;
@@ -156,12 +156,12 @@ class _ProvisioningScreenState extends State<ProvisioningScreen> {
           ),
           const SizedBox(height: 30),
           Container(
-            padding: const EdgeInsets.all(16.0), // Space inside the rectangle
+            padding: const EdgeInsets.all(16.0),
             margin: const EdgeInsets.symmetric(horizontal: 22.0, vertical: 10.0),
             decoration: BoxDecoration(
-              color: Colors.yellow[100], // Background color of the rectangle
-              border: Border.all(color: Colors.yellow[700]!, width: 2), // Border color and width
-              borderRadius: BorderRadius.circular(12), // Rounded corners
+              color: Colors.yellow[100],
+              border: Border.all(color: Colors.yellow[700]!, width: 2),
+              borderRadius: BorderRadius.circular(12),
             ),
             child: Text(
               subMessage,
