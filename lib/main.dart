@@ -2,6 +2,8 @@ import 'package:dry_sense/weather_display_screen.dart';
 import 'package:flutter/material.dart';
 import "package:http/http.dart" as http;
 import 'dart:convert';
+import 'weather_display_screen.dart';
+
 import 'dart:async';
 import 'weather.dart';
 import 'about.dart';
@@ -171,12 +173,12 @@ class _ProvisioningScreenState extends State<ProvisioningScreen> {
             ),
           ),
           const SizedBox(height: 30),
-            Image.asset(
-              gifUrl,
-              height: 180,
-              width: 180,
-              fit: BoxFit.cover,
-            ),
+          Image.asset(
+            gifUrl,
+            height: 180,
+            width: 180,
+            fit: BoxFit.cover,
+          ),
           const Spacer(),
           Padding(
             padding: const EdgeInsets.all(22.0),
@@ -209,3 +211,8 @@ class _ProvisioningScreenState extends State<ProvisioningScreen> {
     );
   }
 }
+
+
+
+
+
