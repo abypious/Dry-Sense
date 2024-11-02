@@ -98,45 +98,37 @@ The **Dry Sense** system operates in both manual and automatic modes:
 Users can monitor moisture levels and receive notifications through a mobile application, such as the Blynk app, which provides easy access to essential drying information. This setup optimizes cloth drying and minimizes energy usage.
 
 # Screenshots (Add at least 3)
-![![cloth is wet](https://github.com/user-attachments/assets/0573bc13-3e5d-40cc-8935-08bbcc6a5a6a)
-](Add screenshot 1 here with proper name)
+![cloth is wet](https://github.com/user-attachments/assets/0573bc13-3e5d-40cc-8935-08bbcc6a5a6a)
 Smart Monitoring: Notification indicating that the cloth is wet.
 
-![![cloth is dry](https://github.com/user-attachments/assets/7812bd83-72c4-4582-9fab-4e1208f9c45f)
+![cloth is dry](https://github.com/user-attachments/assets/7812bd83-72c4-4582-9fab-4e1208f9c45f)
 Smart Monitoring: Notification indicating that the cloth is dry.
 
-![![waitng to connect with module](https://github.com/user-attachments/assets/16cdf0cd-1cb8-49dd-a9ee-e8760c591345)
+![waitng to connect with module](https://github.com/user-attachments/assets/16cdf0cd-1cb8-49dd-a9ee-e8760c591345)
 Connection Status: Awaiting connection with the module, a critical step in initializing communication for data transfer.
 
-![![weather forcasting](https://github.com/user-attachments/assets/a2884765-8d87-4349-8817-44d20d406e49)
+![weather forcasting](https://github.com/user-attachments/assets/a2884765-8d87-4349-8817-44d20d406e49)
 Weather Forecasting Dashboard: Real-time data display providing weather predictions to assist in planning and decision-making
 
-![![about page](https://github.com/user-attachments/assets/65ab2fc2-3aa0-476c-8549-80f399679c81)
+![about page](https://github.com/user-attachments/assets/65ab2fc2-3aa0-476c-8549-80f399679c81)
 About Page: An overview of the mission, vision, and core values of our organization, showcasing our commitment to making a positive impact
 
-# Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
 
 For Hardware:
 
 # Schematic & Circuit
-![![circuit_image](https://github.com/user-attachments/assets/102c1f7f-93bb-4941-9671-fe9e9866dc69)
-](Add your circuit diagram here)
-*Add caption explaining connections*
+![circuit_image](https://github.com/user-attachments/assets/102c1f7f-93bb-4941-9671-fe9e9866dc69)
 
 # Build Photos
-![![nodemcu 8266](https://github.com/user-attachments/assets/12924c75-9314-4f7b-9c8e-63b646be799e)
+![nodemcu 8266](https://github.com/user-attachments/assets/12924c75-9314-4f7b-9c8e-63b646be799e)
 ![16 x 2 I2C LCD Monitor](https://github.com/user-attachments/assets/c934e34f-bdc7-4c05-8d40-158bcbf48f7a)
 ![moisture sensor](https://github.com/user-attachments/assets/8d5c3349-3b6a-4b34-888a-cfc0c5473a55)
-](Add photo of your components here)
-*List out all components shown*
 
-![![dev](https://github.com/user-attachments/assets/0857ee88-8e4e-4321-a57c-9857c8d2282a)
+![dev](https://github.com/user-attachments/assets/0857ee88-8e4e-4321-a57c-9857c8d2282a)
 Development images of our Dry Sensor project.
 
 
-![![final2](https://github.com/user-attachments/assets/be5740e7-e8fd-4ee9-bcb1-35c83a8c067e)
+![final2](https://github.com/user-attachments/assets/be5740e7-e8fd-4ee9-bcb1-35c83a8c067e)
 ![final](https://github.com/user-attachments/assets/425626a4-307e-450c-b402-c6d3d9b2a633)
 Final images of our project Dry Sensor
 
