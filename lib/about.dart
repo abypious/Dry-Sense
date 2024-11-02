@@ -27,7 +27,7 @@ class AboutScreen extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                     fontSize: 22,
                   ),
-                  textAlign: TextAlign.justify,
+                  textAlign: TextAlign.center,
                 ),
                 const SizedBox(height: 20),
                 const Text(
@@ -52,10 +52,11 @@ class AboutScreen extends StatelessWidget {
                       'moisture levels in the cloth.',
                   textAlign: TextAlign.justify,
                 ),
-                const SizedBox(height: 40),
+                const SizedBox(height: 20),
                 Column(
                   children: [
-                    Image.asset('assets/NodeMCU.jpg'), // Updated image
+                    Image.asset('assets/NodeMCU.jpg'),
+                    const SizedBox(height: 20),// Updated image
                     const Text(
                       'NodeMCU Microcontroller',
                       style: TextStyle(
@@ -71,8 +72,9 @@ class AboutScreen extends StatelessWidget {
                           'system\'s connectivity with the cloud or a mobile app for remote monitoring and notifications.',
                       textAlign: TextAlign.justify,
                     ),
-                    const SizedBox(height: 40),
+                    const SizedBox(height: 20),
                     Image.asset('assets/Moisture_Sensor.jpg'),
+                    const SizedBox(height: 20),
                     const Text(
                       'Moisture Sensor',
                       style: TextStyle(
@@ -88,7 +90,7 @@ class AboutScreen extends StatelessWidget {
                           'signals that the cloth is dry.',
                       textAlign: TextAlign.justify,
                     ),
-                    const SizedBox(height: 40),
+                    const SizedBox(height: 20),
                     Image.asset('assets/Display.jpg'),
                     const Text(
                       'Display (LCD)',
@@ -185,7 +187,7 @@ class AboutScreen extends StatelessWidget {
                       'effective cloth management.',
                   textAlign: TextAlign.justify,
                 ),
-                const SizedBox(height: 40),
+                const SizedBox(height: 20),
                 const Text(
                   'Version: 1.0.0',
                   style: TextStyle(
