@@ -27,6 +27,7 @@ class AboutScreen extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                     fontSize: 22,
                   ),
+
                   textAlign: TextAlign.center,
                 ),
                 const SizedBox(height: 20),
@@ -156,6 +157,7 @@ class AboutScreen extends StatelessWidget {
                   textAlign: TextAlign.justify,
                 ),
                 const SizedBox(height: 20),
+
                 const Text(
                   'User Interaction',
                   style: TextStyle(

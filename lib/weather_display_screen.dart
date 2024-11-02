@@ -18,6 +18,9 @@ class _WeatherDisplayScreenState extends State<WeatherDisplayScreen> {
     fetchRainData();
   }
 
+
+
+
   Future<void> fetchRainData() async {
     try {
       final forecast = await WeatherScreen.fetchRainPrediction();
