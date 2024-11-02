@@ -26,8 +26,8 @@ class AboutScreen extends StatelessWidget {
                   style: Theme.of(context).textTheme.titleMedium?.copyWith(
                     fontWeight: FontWeight.bold,
                     fontSize: 22,
-                  ),
-                  textAlign: TextAlign.justify,
+                  ), // Bold title with larger font size
+                  textAlign: TextAlign.center,
                 ),
                 const SizedBox(height: 20),
                 const Text(
@@ -63,7 +63,7 @@ class AboutScreen extends StatelessWidget {
                       'The NodeMCU is a versatile, Wi-Fi-enabled microcontroller that serves as the core processing unit of the Dry Sense system. It connects to the moisture sensor to receive real-time data on moisture levels and displays this information. The NodeMCU also manages the system\'s connectivity with the cloud or a mobile app for remote monitoring and notifications.',
                       textAlign: TextAlign.justify,
                     ),
-                    const SizedBox(height: 40),
+                    const SizedBox(height: 20),
                     Image.asset('assets/Moisture_Sensor.jpg'),
                     const Text(
                       'Moisture Sensor',
@@ -77,7 +77,7 @@ class AboutScreen extends StatelessWidget {
                       'This sensor is the primary tool for detecting the moisture level in cloth. Positioned strategically, it measures the amount of water content in the cloth by evaluating conductivity. When the moisture level falls below a certain threshold, the sensor signals that the cloth is dry.',
                       textAlign: TextAlign.justify,
                     ),
-                    const SizedBox(height: 40),
+                    const SizedBox(height: 20),
                     Image.asset('assets/Display.jpg'),
                     const Text(
                       'Display (LCD)',
@@ -133,6 +133,7 @@ class AboutScreen extends StatelessWidget {
                   textAlign: TextAlign.justify,
                 ),
                 const SizedBox(height: 20),
+
                 const Text(
                   'User Interaction',
                   style: TextStyle(
@@ -158,7 +159,7 @@ class AboutScreen extends StatelessWidget {
                   'The Dry Sense project exemplifies an innovative approach to managing drying processes using IoT technology. By integrating a moisture sensor with the NodeMCU and providing real-time monitoring through a display and mobile app, this system enhances user experience and promotes effective cloth management.',
                   textAlign: TextAlign.justify,
                 ),
-                const SizedBox(height: 40),
+                const SizedBox(height: 20),
                 const Text(
                   'Version: 1.0.0',
                   style: TextStyle(
