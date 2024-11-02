@@ -27,7 +27,7 @@ class AboutScreen extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                     fontSize: 22,
                   ), // Bold title with larger font size
-                  textAlign: TextAlign.justify,
+                  textAlign: TextAlign.center,
                 ),
                 const SizedBox(height: 40),
                 const Text(
@@ -64,7 +64,7 @@ class AboutScreen extends StatelessWidget {
                       'The ESP32 is a versatile, Wi-Fi-enabled microcontroller that serves as the core processing unit of the Dry Sense system. It connects to the moisture sensor to receive real-time data on moisture levels and displays this information. The ESP32 also manages the system\'s connectivity with the cloud or a mobile app for remote monitoring and notifications.',
                       textAlign: TextAlign.justify,
                     ),
-                    const SizedBox(height: 40),
+                    const SizedBox(height: 20),
                     Image.asset('assets/Moisture_Sensor.jpg'),
                     Text(
                       'Moisture Sensor',
@@ -78,7 +78,7 @@ class AboutScreen extends StatelessWidget {
                       'This sensor is the primary tool for detecting the moisture level in cloth. Positioned strategically, it measures the amount of water content in the cloth by evaluating conductivity. When the moisture level falls below a certain threshold, the sensor signals that the cloth is dry.',
                       textAlign: TextAlign.justify,
                     ),
-                    const SizedBox(height: 40),
+                    const SizedBox(height: 20),
                     Image.asset('assets/Display.jpg'),
                     Text(
                       'Display (LCD)',
@@ -105,7 +105,7 @@ class AboutScreen extends StatelessWidget {
                       'Wires are used to establish connections between the ESP32, moisture sensor, and display. These connections facilitate data flow between components, allowing the ESP32 to collect moisture data and communicate results to the display and cloud interface.',
                       textAlign: TextAlign.justify,
                     ),
-                    const SizedBox(height: 40),
+                    const SizedBox(height: 20),
                     Text(
                       'Power Supply',
                       style: const TextStyle(
@@ -120,7 +120,7 @@ class AboutScreen extends StatelessWidget {
                     ),
                   ],
                 ),
-                const SizedBox(height: 40),
+                const SizedBox(height: 20),
                 Text(
                   'Functionality',
                   style: const TextStyle(
@@ -133,7 +133,7 @@ class AboutScreen extends StatelessWidget {
                   'The Dry Sense system can operate in both manual and automatic modes. In automatic mode, the system provides alerts or notifications when the cloth reaches a predefined dryness level, helping users optimize their drying processes. In manual mode, users can check moisture levels directly via the display.',
                   textAlign: TextAlign.justify,
                 ),
-                const SizedBox(height: 40),
+                const SizedBox(height: 20),
                 Text(
                   'User Interaction',
                   style: const TextStyle(
@@ -146,7 +146,7 @@ class AboutScreen extends StatelessWidget {
                   'Users can monitor moisture levels and receive notifications through a mobile application, such as the Blynk app, ensuring they have easy access to important information regarding their drying processes. This setup promotes efficiency in managing cloth drying, minimizing energy usage, and preventing waste.',
                   textAlign: TextAlign.justify,
                 ),
-                const SizedBox(height: 40),
+                const SizedBox(height: 20),
                 Text(
                   'Conclusion',
                   style: const TextStyle(
@@ -159,12 +159,12 @@ class AboutScreen extends StatelessWidget {
                   'The Dry Sense project exemplifies an innovative approach to managing drying processes using IoT technology. By integrating a moisture sensor with the ESP32 and providing real-time monitoring through a display and mobile app, this system enhances user experience and promotes effective cloth management.',
                   textAlign: TextAlign.justify,
                 ),
-                const SizedBox(height: 40),
+                const SizedBox(height: 20),
                 const Text(
                   'Version: 1.0.0',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
-                    fontSize: 20,
+                    fontSize: 10,
                   ),
                 ),
               ],

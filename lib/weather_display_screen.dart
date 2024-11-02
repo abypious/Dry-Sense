@@ -18,6 +18,9 @@ class _WeatherDisplayScreenState extends State<WeatherDisplayScreen> {
     fetchRainData();
   }
 
+
+
+
   Future<void> fetchRainData() async {
     try {
       final forecast = await WeatherScreen.fetchRainPrediction();
@@ -37,9 +40,12 @@ class _WeatherDisplayScreenState extends State<WeatherDisplayScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Rain Prediction'),
-        backgroundColor: Colors.deepPurple,
+        title: const Text(
+            "WEATHER TODAY",
+            style: TextStyle(letterSpacing: 2, fontSize: 20, fontWeight: FontWeight.bold)
+        ),
         centerTitle: true,
+        backgroundColor: Colors.yellow[700],
       ),
       body: isLoading
           ? const Center(child: CircularProgressIndicator())
