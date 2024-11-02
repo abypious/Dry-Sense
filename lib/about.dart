@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AboutScreen extends StatelessWidget {
-  const AboutScreen({Key? key}) : super(key: key);
+  const AboutScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -35,9 +35,9 @@ class AboutScreen extends StatelessWidget {
                   textAlign: TextAlign.justify,
                 ),
                 const SizedBox(height: 20),
-                Text(
+                const Text(
                   'Project Overview',
-                  style: const TextStyle(
+                  style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 20,
                   ),
@@ -51,9 +51,9 @@ class AboutScreen extends StatelessWidget {
                 Column(
                   children: [
                     Image.asset('assets/NodeMCU.jpg'), // Updated image
-                    Text(
+                    const Text(
                       'NodeMCU Microcontroller',
-                      style: const TextStyle(
+                      style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 20,
                       ),
@@ -65,9 +65,9 @@ class AboutScreen extends StatelessWidget {
                     ),
                     const SizedBox(height: 40),
                     Image.asset('assets/Moisture_Sensor.jpg'),
-                    Text(
+                    const Text(
                       'Moisture Sensor',
-                      style: const TextStyle(
+                      style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 20,
                       ),
@@ -79,9 +79,9 @@ class AboutScreen extends StatelessWidget {
                     ),
                     const SizedBox(height: 40),
                     Image.asset('assets/Display.jpg'),
-                    Text(
+                    const Text(
                       'Display (LCD)',
-                      style: const TextStyle(
+                      style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 20,
                       ),
@@ -92,9 +92,9 @@ class AboutScreen extends StatelessWidget {
                       textAlign: TextAlign.justify,
                     ),
                     const SizedBox(height: 20),
-                    Text(
+                    const Text(
                       'Connecting Wires',
-                      style: const TextStyle(
+                      style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 20,
                       ),
@@ -105,9 +105,9 @@ class AboutScreen extends StatelessWidget {
                       textAlign: TextAlign.justify,
                     ),
                     const SizedBox(height: 20),
-                    Text(
+                    const Text(
                       'Power Supply',
-                      style: const TextStyle(
+                      style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 20,
                       ),
@@ -120,9 +120,9 @@ class AboutScreen extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(height: 20),
-                Text(
+                const Text(
                   'Functionality',
-                  style: const TextStyle(
+                  style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 20,
                   ),
@@ -133,9 +133,9 @@ class AboutScreen extends StatelessWidget {
                   textAlign: TextAlign.justify,
                 ),
                 const SizedBox(height: 20),
-                Text(
+                const Text(
                   'User Interaction',
-                  style: const TextStyle(
+                  style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 20,
                   ),
@@ -146,9 +146,9 @@ class AboutScreen extends StatelessWidget {
                   textAlign: TextAlign.justify,
                 ),
                 const SizedBox(height: 20),
-                Text(
+                const Text(
                   'Conclusion',
-                  style: const TextStyle(
+                  style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 20,
                   ),
