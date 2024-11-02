@@ -99,19 +99,19 @@ Users can monitor moisture levels and receive notifications through a mobile app
 
 # Screenshots (Add at least 3)
 ![cloth is wet](https://github.com/user-attachments/assets/0573bc13-3e5d-40cc-8935-08bbcc6a5a6a)
-Smart Monitoring: Notification indicating that the cloth is wet.
+<br>Smart Monitoring: Notification indicating that the cloth is wet.
 
 ![cloth is dry](https://github.com/user-attachments/assets/7812bd83-72c4-4582-9fab-4e1208f9c45f)
-Smart Monitoring: Notification indicating that the cloth is dry.
+<br>Smart Monitoring: Notification indicating that the cloth is dry.
 
 ![waitng to connect with module](https://github.com/user-attachments/assets/16cdf0cd-1cb8-49dd-a9ee-e8760c591345)
-Connection Status: Awaiting connection with the module, a critical step in initializing communication for data transfer.
+<br>Connection Status: Awaiting connection with the module, a critical step in initializing communication for data transfer.
 
 ![weather forcasting](https://github.com/user-attachments/assets/a2884765-8d87-4349-8817-44d20d406e49)
-Weather Forecasting Dashboard: Real-time data display providing weather predictions to assist in planning and decision-making
+<br>Weather Forecasting Dashboard: Real-time data display providing weather predictions to assist in planning and decision-making
 
 ![about page](https://github.com/user-attachments/assets/65ab2fc2-3aa0-476c-8549-80f399679c81)
-About Page: An overview of the mission, vision, and core values of our organization, showcasing our commitment to making a positive impact
+<br>About Page: An overview of the mission, vision, and core values of our organization, showcasing our commitment to making a positive impact
 
 
 For Hardware:
