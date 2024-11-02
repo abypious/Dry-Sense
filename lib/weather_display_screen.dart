@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'weather.dart';
 
 class WeatherDisplayScreen extends StatefulWidget {
-  const WeatherDisplayScreen({Key? key}) : super(key: key);
+  const WeatherDisplayScreen({super.key});
 
   @override
   _WeatherDisplayScreenState createState() => _WeatherDisplayScreenState();
