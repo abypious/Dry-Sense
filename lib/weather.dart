@@ -5,7 +5,6 @@ import 'package:geolocator/geolocator.dart';
 class WeatherScreen {
   static const String apiKey = 'c3dcc587e7a6e00d06a71bf1fbc86f4a';
 
-  // Function to get current location and fetch weather data based on it
   static Future<List<String>> fetchRainPrediction() async {
     Position position = await _determinePosition();
     final latitude = position.latitude;

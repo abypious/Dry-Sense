@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'weather.dart';
 
 class WeatherDisplayScreen extends StatefulWidget {
-  const WeatherDisplayScreen({Key? key}) : super(key: key);
+  const WeatherDisplayScreen({super.key});
 
   @override
   _WeatherDisplayScreenState createState() => _WeatherDisplayScreenState();
@@ -37,9 +37,12 @@ class _WeatherDisplayScreenState extends State<WeatherDisplayScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Rain Prediction'),
-        backgroundColor: Colors.deepPurple,
+        title: const Text(
+            "WEATHER TODAY",
+            style: TextStyle(letterSpacing: 2, fontSize: 20, fontWeight: FontWeight.bold)
+        ),
         centerTitle: true,
+        backgroundColor: Colors.yellow[700],
       ),
       body: isLoading
           ? const Center(child: CircularProgressIndicator())
