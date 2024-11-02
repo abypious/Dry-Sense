@@ -29,4 +29,12 @@ dev_dependencies:
 flutter:
 
   uses-material-design: true
+  assets:
+    - assets/dry.gif
+    - assets/wet.gif
+    - assets/wait.gif
+    - assets/Display.jpg
+    - assets/ESP32.jpg
+    - assets/Moisture_Sensor.jpg
+
 
