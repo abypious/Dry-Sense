@@ -135,9 +135,7 @@ Final images of our project Dry Sensor
 
 ### Project Demo
 # Video
-https://drive.google.com/file/d/1TQ4KwjzPaUuGWNgknfTaT_RDseOuR--U/view?usp=sharing
-
-
+https://drive.google.com/drive/folders/1LhUUJdU6L1q_gl54QoHN0NawcJaNl_-E?usp=sharing
 ## Team Contributions
 - ABY PIOUS VINOY : HARDWARE DEVELOPMENT
 - ATHIRA VIJAYAN : APPLICATION BUILDING
