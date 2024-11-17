@@ -2,6 +2,8 @@
 
 Dry Sense
 
+Proof link: https://drive.google.com/drive/folders/1LhUUJdU6L1q_gl54QoHN0NawcJaNl_-E
+
 ## Basic Details
 ### Team Name: Seed
 
